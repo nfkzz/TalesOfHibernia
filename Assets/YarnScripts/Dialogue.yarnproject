@@ -1,0 +1,12 @@
+{
+  "projectFileVersion": 4,
+  "sourceFiles": [
+    "Seamus"
+  ],
+  "excludeFiles": [],
+  "localisation": {},
+  "baseLanguage": "en",
+  "compilerOptions": {
+    "diagnosticsSeverity": {}
+  }
+}
