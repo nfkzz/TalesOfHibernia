@@ -16,3 +16,11 @@ position: 4,183
 Hugh: Ó, ní chríochnaíonn an obair chrua choíche.."Oh, The hard work never ends.."  #line:0451a94 
 ->Continue #line:0416850 
 ===
+title: Axe
+position: 280,-4
+---
+Hugh: Aon úsáid le gearán. "No use in complaining"
+->Continue 
+Teastaíonn mo thua uaim le dul tríd an gcoill seo. "I need my axe to get through this wood"
+->Continue
+===

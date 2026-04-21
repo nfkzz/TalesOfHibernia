@@ -18,6 +18,7 @@ public class SimplePlayerController : MonoBehaviour
     public DialogueRunner dialogueRunner;
 
     Rigidbody rb;
+    public Renderer axeRenderer;
 
     void Awake()
     {
@@ -94,6 +95,8 @@ public class SimplePlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        dialogueRunner.StartDialogue("NextDialogue");
+        //dialogueRunner.StartDialogue("NextDialogue");
+
+        
     }
 }
