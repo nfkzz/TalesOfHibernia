@@ -8529,6 +8529,7 @@ GameObject:
   - component: {fileID: 2073302531}
   - component: {fileID: 2073302530}
   - component: {fileID: 2073302533}
+  - component: {fileID: 2073302534}
   m_Layer: 0
   m_Name: Player(Hugh)
   m_TagString: Untagged
@@ -8638,7 +8639,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073302528}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d02fa8bd8203a8e478c2312a1209236e, type: 3}
   m_Name: 
@@ -8647,11 +8648,38 @@ MonoBehaviour:
   acceleration: 10
   deceleration: 10
   jumpForce: 5
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 583103867}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!54 &2073302534
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073302528}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2115085017
 PrefabInstance:
   m_ObjectHideFlags: 0
