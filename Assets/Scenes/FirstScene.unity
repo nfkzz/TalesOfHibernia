@@ -1735,6 +1735,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0271487, y: 1.0275782, z: 2.0010424}
   m_Center: {x: -0.48654154, y: 0.4864139, z: 1.0005052}
+--- !u!1 &439126553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4058579974713621307, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
+  m_PrefabInstance: {fileID: 557201352}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &439749033 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
@@ -2431,7 +2436,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4058579974713621307, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 617687287}
+    - targetCorrespondingSourceObject: {fileID: 4058579974713621307, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 617687286}
+    - targetCorrespondingSourceObject: {fileID: 4058579974713621307, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 617687288}
   m_SourcePrefab: {fileID: 100100000, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
 --- !u!1001 &573746700
 PrefabInstance:
@@ -9763,6 +9777,116 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3682018525819560321, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
   m_PrefabInstance: {fileID: 557201352}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &617687286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439126553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ac52e0d66d0f94d9e4ce5fdb1e2905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LuxInstantVegetation.LuxInstantWind
+  _MainWind: 0.11
+  _Turbulence: 3.57
+  _PulseMagnitude: 1
+  _MapMainToTurbulence: 1
+  _MainToTurbulence:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _WindFadeDistance: 250
+--- !u!182 &617687287
+WindZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439126553}
+  m_Enabled: 1
+  m_Mode: 0
+  m_Radius: 20
+  m_WindMain: 0.12
+  m_WindTurbulence: 1
+  m_WindPulseMagnitude: 0.5
+  m_WindPulseFrequency: 0.01
+--- !u!114 &617687288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439126553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4feaef2b1d7e3d54cb7ab07614c908c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LuxInstantVegetation.LuxSyncWindSettings
+  _MasterMaterial: 0
+  materials:
+  - {fileID: 2100000, guid: 796f3cfff5dc1454d886ce1295cdba2e, type: 2}
+  shaders:
+  - {fileID: -6465566751694194690, guid: b82d12de3514985498e272eeed3f5b52, type: 3}
+  _ColorVariation: {r: 0.9, g: 0.5, b: 0, a: 0.1}
+  _MainBending:
+    _MainStrength: 1
+    _MainPower: 1.2
+    _ScaleAlongXZ: 0.1
+    _Speed: 1
+  _BranchBending:
+    _EnableBranchWind: 1
+    _DirectionalMask: 0.5
+    _Rolling: 1
+    _Displacement: 0.3
+    _BranchWindSpeed: 0.1
+    _BakedWindMask:
+      _EnableBakedWindMask: 0
+      _MaskVCChannel: 0
+    _ProceduralWindMask:
+      _ProceduralWindMask: 1
+      _WindMaskFalloff: 0.75
+      _UseHemisphere: 0
+      _MaskScale: {x: 1, y: 1, z: 1}
+    _BakedPhase:
+      _EnableBakedPhase: 0
+      _PhaseChannel: 0
+      _PhaseScale: 1
+    _ProceduralPhase:
+      _ProceduralTiling: 0.05
+      _ProceduralStrength: 1
+  _EdgeFlutter:
+    _EnableFlutter: 0
+    _FlutterMaskVCChannel: 1
+    _TVEFlutterMask: 0
+    _FlutterStrength: 0.1
+    _FlutterSpeed: 1
+    _FlutterTiling: 0.1
+  _DebugMode: 1
+  _Debug: 0
+  _AutoSync: 0
+  _DontFetchValues: 1
 --- !u!1 &627731061
 GameObject:
   m_ObjectHideFlags: 0
