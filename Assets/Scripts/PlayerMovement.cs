@@ -1,60 +1,77 @@
-
-
 using UnityEngine;
+using Yarn.Unity;
 
-public class PlayerMovement : MonoBehaviour
+public class SimplePlayerController : MonoBehaviour
 {
-    [Header("Movement Settings")]
-    public float moveSpeed = 6f;
-    public float acceleration = 10f;
-    public float deceleration = 10f;
-    public float jumpForce = 5f;
+    [Header("Movement")]
+    public float speed = 5f;
 
-    [Header("Ground Check")]
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
+    [Header("Mouse Look")]
+    public float mouseSensitivity = 150f;
+    public Transform playerCamera;
 
-    private Rigidbody rb;
-    private bool isGrounded;
-    private Vector3 currentVelocity;
-    private Vector3 inputDirection;
+    float xRotation = 0f;
+    bool canControl = true;
+
+    [Header("Dialogue")]
+    public DialogueRunner dialogueRunner;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        // Lock cursor at start
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        // Hook into Yarn events
+        if (dialogueRunner != null)
+        {
+            dialogueRunner.onDialogueStart.AddListener(OnDialogueStart);
+            dialogueRunner.onDialogueComplete.AddListener(OnDialogueEnd);
+        }
     }
 
     void Update()
     {
-        // Ground Check
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        if (!canControl) return;
 
-        // Smooth input (Input.GetAxis is smoother than GetAxisRaw)
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-        inputDirection = (transform.forward * vertical + transform.right * horizontal).normalized;
-
-        // Jump
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
+        HandleMouseLook();
+        HandleMovement();
     }
 
-    void FixedUpdate()
+    void HandleMouseLook()
     {
-        // Calculate target velocity
-        Vector3 targetVelocity = inputDirection * moveSpeed;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        // Smooth acceleration and deceleration
-        if (inputDirection.magnitude > 0)
-            currentVelocity = Vector3.Lerp(currentVelocity, targetVelocity, acceleration * Time.fixedDeltaTime);
-        else
-            currentVelocity = Vector3.Lerp(currentVelocity, Vector3.zero, deceleration * Time.fixedDeltaTime);
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        // Apply movement
-        rb.MovePosition(rb.position + currentVelocity * Time.fixedDeltaTime);
+        playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        transform.Rotate(Vector3.up * mouseX);
+    }
+
+    void HandleMovement()
+    {
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector3 move = transform.right * x + transform.forward * z;
+        transform.Translate(move * speed * Time.deltaTime, Space.World);
+    }
+
+    void OnDialogueStart()
+    {
+        canControl = false;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    void OnDialogueEnd()
+    {
+        canControl = true;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

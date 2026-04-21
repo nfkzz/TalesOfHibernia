@@ -1479,6 +1479,17 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &439749033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 1945109172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &463430624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8547,7 +8558,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4, y: -37.3, z: 393.7}
-  m_LocalScale: {x: 21.5, y: 35, z: 35}
+  m_LocalScale: {x: 20, y: 30, z: 35}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330585546}
@@ -8644,15 +8655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d02fa8bd8203a8e478c2312a1209236e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 6
-  acceleration: 10
-  deceleration: 10
-  jumpForce: 5
-  groundCheck: {fileID: 583103867}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 0
+  speed: 32.1
+  mouseSensitivity: 179.2
+  playerCamera: {fileID: 330585546}
+  dialogueRunner: {fileID: 439749033}
 --- !u!54 &2073302534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8677,9 +8683,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 108
+  m_CollisionDetection: 2
 --- !u!1001 &2115085017
 PrefabInstance:
   m_ObjectHideFlags: 0
