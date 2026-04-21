@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 796f3cfff5dc1454d886ce1295cdba2e
-NativeFormatImporter:
+guid: ac802d827ab6aa348bbc198d60115f59
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,6 +10,6 @@ AssetOrigin:
   productId: 286644
   packageName: Lux Instant Vegetation
   packageVersion: 0.94
-  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_TreeIt_A_fully_procedural
-    Tex Bark URP.mat
+  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Prefabs/PF_Fern_var01
+    Debug URP.prefab
   uploadId: 720086

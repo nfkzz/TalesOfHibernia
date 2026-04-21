@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3eaa7b8803a4ba4eabc897efbee258a
+guid: c853cd30e55b0d742abf18ded68976b8
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
@@ -11,6 +11,6 @@ AssetOrigin:
   productId: 286644
   packageName: Lux Instant Vegetation
   packageVersion: 0.94
-  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_TreeIt_A_baked
-    Tex URP.mat
+  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_TreeIt_A_fully_procedural
+    URP.mat
   uploadId: 720086

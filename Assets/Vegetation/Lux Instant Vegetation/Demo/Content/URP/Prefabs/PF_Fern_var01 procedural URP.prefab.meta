@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7394aaf949614174fa350b2a1dab4b39
+guid: c9a6e9b2ef92b924c9f6a1dbe172e11e
 PrefabImporter:
   externalObjects: {}
   userData: 
@@ -11,5 +11,5 @@ AssetOrigin:
   packageName: Lux Instant Vegetation
   packageVersion: 0.94
   assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Prefabs/PF_Fern_var01
-    baked phase URP.prefab
+    procedural URP.prefab
   uploadId: 720086

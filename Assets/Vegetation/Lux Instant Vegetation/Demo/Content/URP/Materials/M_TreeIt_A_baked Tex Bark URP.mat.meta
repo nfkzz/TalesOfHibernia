@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 66ec748f1fe7ad34f86edc64ba1f9468
+guid: 3f34a65b05cae8a4c82a1c232fd2d448
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
@@ -11,6 +11,6 @@ AssetOrigin:
   productId: 286644
   packageName: Lux Instant Vegetation
   packageVersion: 0.94
-  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_TreeIt_Palm_A_fully_procedural
-    URP.mat
+  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_TreeIt_A_baked
+    Tex Bark URP.mat
   uploadId: 720086

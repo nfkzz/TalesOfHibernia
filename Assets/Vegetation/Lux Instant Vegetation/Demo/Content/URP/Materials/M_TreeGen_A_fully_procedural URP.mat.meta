@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d4e17dfcb54eadc4d840ea28cd39ef79
+guid: 5d07790e77b628d419e57c1c4df43cc5
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
@@ -11,6 +11,6 @@ AssetOrigin:
   productId: 286644
   packageName: Lux Instant Vegetation
   packageVersion: 0.94
-  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_Fern_Debug
+  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_TreeGen_A_fully_procedural
     URP.mat
   uploadId: 720086

@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: ca8d1ba75d32e8b43b19a971207c3726
-NativeFormatImporter:
+guid: 33dd0aee28539ef4a891d3a7c53025f7
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,6 +10,6 @@ AssetOrigin:
   productId: 286644
   packageName: Lux Instant Vegetation
   packageVersion: 0.94
-  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Materials/M_Fern_Baked
-    URP.mat
+  assetPath: Assets/Forst/Lux Instant Vegetation/Demo/Content/URP/Prefabs/PF_RedBush_Var1
+    URP.prefab
   uploadId: 720086
