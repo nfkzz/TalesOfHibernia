@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Yarn.Unity;
 
+[RequireComponent(typeof(Rigidbody))]
 public class SimplePlayerController : MonoBehaviour
 {
     [Header("Movement")]
@@ -16,13 +17,18 @@ public class SimplePlayerController : MonoBehaviour
     [Header("Dialogue")]
     public DialogueRunner dialogueRunner;
 
+    Rigidbody rb;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     void Start()
     {
-        // Lock cursor at start
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        // Hook into Yarn events
         if (dialogueRunner != null)
         {
             dialogueRunner.onDialogueStart.AddListener(OnDialogueStart);
@@ -32,14 +38,19 @@ public class SimplePlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!canControl) return;
-
         HandleMouseLook();
+    }
+
+    void FixedUpdate()
+    {
+        if (!canControl) return;
         HandleMovement();
     }
 
     void HandleMouseLook()
     {
+        if (!canControl) return;
+
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
@@ -47,7 +58,10 @@ public class SimplePlayerController : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        transform.Rotate(Vector3.up * mouseX);
+
+        // rotate using Rigidbody-friendly method
+        Quaternion turn = Quaternion.Euler(0f, mouseX, 0f);
+        rb.MoveRotation(rb.rotation * turn);
     }
 
     void HandleMovement()
@@ -56,12 +70,18 @@ public class SimplePlayerController : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
-        transform.Translate(move * speed * Time.deltaTime, Space.World);
+
+        Vector3 velocity = move * speed;
+        velocity.y = rb.linearVelocity.y; // keep gravity working
+
+        rb.linearVelocity = velocity;
     }
 
     void OnDialogueStart()
     {
         canControl = false;
+
+        rb.linearVelocity = Vector3.zero;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
