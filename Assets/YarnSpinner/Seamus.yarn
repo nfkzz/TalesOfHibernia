@@ -1,9 +1,18 @@
 ﻿title: Opening
 ---
-Opening:In 1601, Ireland is in the midst of the Nine Year's War, with most of the island's clans fighting off English forces under Elizabeth I. 
-->Continue
-The Tudors are determined to fully pacify the island, with English troops burning up any crops or livestock possible to starve the populace. 
-->Continue
-In the midst of this devastation, small communities did what they could to survive...
-->Start
+Opening:In 1601, Ireland is in the midst of the Nine Year's War, with most of the island's clans fighting off English forces under Elizabeth I.  #line:09bf25b 
+->Continue #line:0f16782 
+The Tudors are determined to fully pacify the island, with English troops burning up any crops or livestock possible to starve the populace.  #line:0a421cb 
+->Continue #line:0c79599 
+In the midst of this devastation, small communities did what they could to survive... #line:088aa6b 
+->Start Game#line:0f2dc11 
+<<wait 1.5>>
+<<jump Hugh>>
+===
+title: Hugh
+color: blue
+position: 4,183
+---
+Hugh: Ó, ní chríochnaíonn an obair chrua choíche.."Oh, The hard work never ends.."  #line:0451a94 
+->Continue #line:0416850 
 ===
