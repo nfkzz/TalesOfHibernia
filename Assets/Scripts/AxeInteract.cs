@@ -35,6 +35,8 @@ public class AxePickup : MonoBehaviour
     {
         pickedUp = true;
 
+        PlayerState.hasAxe = true;  
+
         if (axeVisual != null)
             axeVisual.SetActive(false);
 
