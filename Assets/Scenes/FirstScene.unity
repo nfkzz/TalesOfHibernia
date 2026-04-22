@@ -791,7 +791,7 @@ MonoBehaviour:
   dialogueRunner: {fileID: 439749033}
   fadeCanvas: {fileID: 2062847261}
   fadeDuration: 2.5
-  sceneToLoad: 
+  sceneToLoad: SecondScene
 --- !u!1 &164131680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4058579974713621307, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
