@@ -11525,6 +11525,79 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0271487, y: 1.0275785, z: 2.0010428}
   m_Center: {x: -0.48654798, y: 0.48642093, z: 1.0005059}
+--- !u!1001 &977934878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 25.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 25.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 242.21451
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -69.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 198.17767
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_Name
+      value: elizabethan_musketeer (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
 --- !u!1001 &995814922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16449,3 +16522,4 @@ SceneRoots:
   - {fileID: 1737963753}
   - {fileID: 1596698408}
   - {fileID: 1795869574}
+  - {fileID: 977934878}
