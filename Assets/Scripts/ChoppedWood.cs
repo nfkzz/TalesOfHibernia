@@ -100,4 +100,6 @@ public class ChopWood : MonoBehaviour
         c.a = 1f;
         text.color = c;
     }
+
+
 }
