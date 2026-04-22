@@ -11593,6 +11593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: elizabethan_musketeer (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5115290542606426497, guid: 8f20438cf534e6b4cad090a9fe7f3b43, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
