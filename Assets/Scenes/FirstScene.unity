@@ -756,6 +756,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.0048926, y: 0.21418352, z: 2.0029209}
   m_Center: {x: -1.4996257, y: 0.049729306, z: 0.9990013}
+--- !u!23 &139656224 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8124426281811907454, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
+  m_PrefabInstance: {fileID: 573746700}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &164131680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4058579974713621307, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
@@ -5198,6 +5203,10 @@ PrefabInstance:
     - target: {fileID: -2015517521416903138, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2000694055544792405, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
+      propertyPath: m_Name
+      value: ShedForCow
       objectReference: {fileID: 0}
     - target: {fileID: -2000694055544792405, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
       propertyPath: m_Layer
@@ -12123,6 +12132,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3682018525819560321, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
   m_PrefabInstance: {fileID: 1138670813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1162499476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162499479}
+  - component: {fileID: 1162499478}
+  - component: {fileID: 1162499477}
+  m_Layer: 0
+  m_Name: DialogueTriggerForAxeRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1162499477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162499476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc17af8e7f3eba4083ad3bdb29353d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  dialogueRunner: {fileID: 439749033}
+  nodeName: Axe
+  axeRenderer: {fileID: 1741829252}
+--- !u!65 &1162499478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162499476}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1162499479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162499476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -163.9, y: -39.85, z: 357}
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1191920684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12213,7 +12291,7 @@ GameObject:
   - component: {fileID: 1242335257}
   - component: {fileID: 1242335259}
   m_Layer: 0
-  m_Name: DialogueTriggerForAxe
+  m_Name: DialogueTriggerForAxeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13419,6 +13497,75 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0000024, y: 0.20000064, z: 4.0000024}
   m_Center: {x: -2.0000005, y: -0.00000008940695, z: 2.0000038}
+--- !u!1 &1596698406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596698408}
+  - component: {fileID: 1596698407}
+  - component: {fileID: 1596698409}
+  m_Layer: 0
+  m_Name: DialogueTriggerForCow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1596698407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596698406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0af51218f09d64fbe93fb6a3b19db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CowTriggerYarn
+  nodeName: Cow
+  dialogueRunner: {fileID: 439749033}
+  cowRenderer: {fileID: 139656224}
+--- !u!4 &1596698408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596698406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 232.8098, y: -45.8, z: 243.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1596698409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596698406}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 100, y: 100, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1635480059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15936,6 +16083,8 @@ SceneRoots:
   - {fileID: 835665986}
   - {fileID: 1025585319}
   - {fileID: 1242335258}
+  - {fileID: 1162499479}
   - {fileID: 942731909}
   - {fileID: 455841226}
   - {fileID: 1737963753}
+  - {fileID: 1596698408}

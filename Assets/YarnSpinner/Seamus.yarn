@@ -17,10 +17,24 @@ Hugh: Ó, ní chríochnaíonn an obair chrua choíche.."Oh, The hard work never 
 ->Continue #line:0416850 
 ===
 title: Axe
-position: 280,-4
+color: blue
+position: 276,3
 ---
 Hugh: Aon úsáid le gearán. "No use in complaining"
 ->Continue 
 Teastaíonn mo thua uaim le dul tríd an gcoill seo. "I need my axe to get through this wood"
+->Continue
+===
+title: Cow
+color: red
+position: 288,189
+---
+Hugh: Fan, beagnach gur dhearmad mé! "Wait, I nearly forgot!"
+->Continue
+Hugh: Ba chóir dom dul isteach sa bhaile roimh luí na gréine. "I should head into town before dusk."
+->Continue 
+Hugh: Tá collaí agam a bhí mé ag iarraidh a dhíol. "I've a heifer I've been wanting to sell."
+->Continue
+Hugh: Buíochas le Dia gur chuir mé sa scioból í sular tháinig an bháisteach seo. "Thank God I put her in the shed before this rain came."
 ->Continue
 ===
