@@ -27,7 +27,7 @@ Teastaíonn mo thua uaim le dul tríd an gcoill seo. "I need my axe to get throu
 ===
 title: Cow
 color: red
-position: 288,189
+position: 278,187
 ---
 Hugh: Fan, beagnach gur dhearmad mé! "Wait, I nearly forgot!"
 ->Continue
@@ -36,5 +36,12 @@ Hugh: Ba chóir dom dul isteach sa bhaile roimh luí na gréine. "I should head 
 Hugh: Tá collaí agam a bhí mé ag iarraidh a dhíol. "I've a heifer I've been wanting to sell."
 ->Continue
 Hugh: Buíochas le Dia gur chuir mé sa scioból í sular tháinig an bháisteach seo. "Thank God I put her in the shed before this rain came."
+->Continue
+===
+title: IntoTown
+color: yellow
+position: 280,368
+---
+Hugh: Tá súil agam go bhfuil an cogadh i bhfad uainn. "Hopefully the war is far from here."
 ->Continue
 ===

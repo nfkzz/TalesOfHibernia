@@ -750,17 +750,32 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.0048926, y: 0.21418352, z: 2.0029209}
-  m_Center: {x: -1.4996257, y: 0.049729306, z: 0.9990013}
+  m_Size: {x: 3.0048962, y: 0.5437087, z: 2.0029194}
+  m_Center: {x: -1.4996188, y: -0.115033485, z: 0.9990022}
 --- !u!23 &139656224 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 8124426281811907454, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
   m_PrefabInstance: {fileID: 573746700}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &139656225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139656217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff07e226115b8b4a98395dc422cf1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  dialogueRunner: {fileID: 439749033}
+  nodeName: IntoTown
+  interactText: {fileID: 455841220}
 --- !u!1 &164131680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4058579974713621307, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
@@ -10213,6 +10228,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2000694055544792405, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 139656221}
+    - targetCorrespondingSourceObject: {fileID: -2000694055544792405, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 139656225}
     - targetCorrespondingSourceObject: {fileID: 7781818602283098438, guid: 1560fbf343e9e6841b84b1116cef479f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 804998731}
