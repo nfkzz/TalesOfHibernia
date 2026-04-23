@@ -46,3 +46,12 @@ Hugh: Tá súil agam go bhfuil an cogadh i bhfad uainn. "Hopefully the war is fa
 ->Continue
 <<fade_out>>
 ===
+title: EnterTown
+color: orange
+position: 10,393
+---
+Hugh: Ó, a Dhia daor! "Oh, dear God!"
+->Continue
+Hugh: Ní bhíonn na soilse múchta riamh i dteach Cormac. "The lights are never out at Cormacs."
+->Continue
+===
