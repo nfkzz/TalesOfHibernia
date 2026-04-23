@@ -151,6 +151,8 @@ English Caliverman 1: And not a good deed more.
 <<jump EndOfDemo>>
 ===
 title: EndOfDemo
+color: purple
+position: 869,916
 ---
 End Of Demo: Thanks for playing!
 ===
