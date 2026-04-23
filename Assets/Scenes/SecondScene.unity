@@ -554,6 +554,10 @@ PrefabInstance:
       propertyPath: yarnProject
       value: 
       objectReference: {fileID: 7545569452688597077, guid: dd751d67dfdba0142961948c311e8eac, type: 3}
+    - target: {fileID: 8635081094713202853, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: debugTextView
+      value: 
+      objectReference: {fileID: 410477639}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -609,6 +613,17 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
+--- !u!114 &410477639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2958262986520364888, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 410477635}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &410702365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0416fe15628074e46a654f38a2ff33f2, type: 3}
