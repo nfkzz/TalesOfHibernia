@@ -55,3 +55,102 @@ Hugh: Ó, a Dhia daor! "Oh, dear God!"
 Hugh: Ní bhíonn na soilse múchta riamh i dteach Cormac. "The lights are never out at Cormacs."
 ->Continue
 ===
+title: Confrontation
+color: purple
+position: -307,66
+---
+English Caliverman 1: Yow! Yow there!
+->Continue
+<<jump Confusion>>
+===
+title: Confusion
+color: 7e5818
+position: -309,252
+---
+Hugh: Cad é? "What is it?"
+->Continue
+<<jump Seller>>
+===
+title: Seller
+color: green
+position: -306,455
+---
+English Caliverman 1: That cow, how sell yow her?
+->Continue
+<<jump LangaugeBarrier>>
+===
+title: LangaugeBarrier
+color: blue
+position: -305,673
+---
+Hugh: Ní thuigim.. "I don't understand.."
+->Continue
+<<jump Threats>>
+===
+title: Threats
+color: red
+position: -34,674
+---
+English Caliverman 1: I only jest, for thou are to be reasonable and give her for naught.
+->Continue
+<<jump Pleading>>
+===
+title: Pleading
+color: purple
+position: 236,675
+---
+Hugh: Tá brón orm? "I'm sorry?"
+->Continue
+<<jump LastChance>>
+===
+title: LastChance
+color: 426f2f
+position: 489,677
+---
+English Caliverman 1: At one word, yow shall give here that cow for I've not eaten for a time now.
+->Continue 
+<<jump Desperation>>
+===
+title: Desperation
+color: 314a4e
+position: 744,677
+---
+Hugh: Stop ag díriú an gunna sin orm! "Stop aiming that gun at me!"
+->Continue
+<<jump Anger>>
+=== 
+title: Anger
+color: 641717
+position: 981,676
+---
+English Caliverman 1: I shalln't ask ye again. 
+->Continue
+English Caliverman 2: Give us that cow!
+->Continue
+    ->Run Away
+        <<jump Death>>
+    ->Do As Asked
+        <<jump Benevolence>>
+===
+title: Death
+---
+English Caliverman 2: Shoot him!
+->Continue
+English Caliverman 1: Nay, for it were be a waste of shot, fetch the cow and let us depart. 
+->Continue
+<<jump EndOfDemo>>
+===
+title: Benevolence
+---
+Hugh: Seo, tóg an bhó má chuireann sin stad ort! "Here, take the heifer if that will stop you!"
+->Continue
+English Caliverman 2: What a goodly cow 'tis. We shall spare yow. 
+->Continue
+English Caliverman 1: And not a good deed more. 
+->Continue
+<<jump EndOfDemo>>
+===
+title: EndOfDemo
+---
+End Of Demo: Thanks for playing!
+===
